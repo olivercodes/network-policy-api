@@ -53,7 +53,7 @@ selected by the AdminNetworkPolicy, as opposed to implicit deny NetworkPolicy ru
 - **Pass**: Traffic that matches a `Pass` rule will skip all further rules from all
   numbered ANPs and instead be enforced by the K8s NetworkPolicies.
   If there is no K8s NetworkPolicy of BaselineAdminNetworkPolicy rule match
-  match, traffic will be governed by the implementation. For most implementations, 
+  traffic will be governed by the implementation. For most implementations,
   this means "allow", but there may be implementations which have their own policies 
   outside of the standard Kubernetes APIs.
 - **Deny**: Traffic that matches a `Deny` rule will be dropped.
